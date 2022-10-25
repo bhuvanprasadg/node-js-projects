@@ -1,0 +1,59 @@
+GET http://localhost:3000/books?pageNum=1&pageSize=10
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc1ZlcmlmaWVkIjp0cnVlLCJpYXQiOjE2NDk5MjYzNDQsImV4cCI6MTY0OTkyODE0NH0.KkMtLXc8UQbIzyX3U-kneXVrI4_QpCeFN526s02TfLU
+
+POST http://localhost:3000/borrow-books
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc1ZlcmlmaWVkIjp0cnVlLCJpYXQiOjE2NDk5MjYzNDQsImV4cCI6MTY0OTkyODE0NH0.KkMtLXc8UQbIzyX3U-kneXVrI4_QpCeFN526s02TfLU
+Content-Type: application/json
+
+{
+    "book_ids": [111,109],
+    "student_id": 1001,
+    "staff_id": 51
+}
+
+POST http://localhost:3000/return-books
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc1ZlcmlmaWVkIjp0cnVlLCJpYXQiOjE2NDk5MjYzNDQsImV4cCI6MTY0OTkyODE0NH0.KkMtLXc8UQbIzyX3U-kneXVrI4_QpCeFN526s02TfLU
+Content-Type: application/json
+
+{
+    "book_ids": [100,111],
+    "penalty_amounts": [100,200],
+    "student_id": 1001,
+    "staff_id": 51
+}
+
+//passenger
+POST http://localhost:3030/login
+Content-Type: application/json
+
+{
+    "email":"sinha.j@gmail.com",
+    "password":"xyz123@j"
+}
+
+//admin
+POST http://localhost:300/login
+Content-Type: application/json
+
+{
+    "email":"agarwal.r@gmail.com",
+    "password":"abc098@r"
+}
+
+//agent
+POST http://localhost:3000/login
+Content-Type: application/json
+
+{
+    "email":"sainesh.n@gmail.com",
+    "password":"mno456@s"
+}
+
+//admin 1
+DELETE http://localhost:3000/flight
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc0FkbWluIjp0cnVlLCJpc0FnZW50Ijp0cnVlLCJpc1Bhc3NlbmdlciI6dHJ1ZSwiaWF0IjoxNjQ5OTM0Mzc4fQ.uxrdwBmuREUwS2Srg8exK-KcQ8mUHVj41aR_YSA2_Vs
+Content-Type: application/json
+
+{
+    "flightId": "61090"
+}

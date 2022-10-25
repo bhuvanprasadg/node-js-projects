@@ -1,0 +1,18 @@
+GET http://localhost:3030/books?pageSize=10&pageNum=1
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc0FkbWluIjpmYWxzZSwiaXNBZ2VudCI6ZmFsc2UsImlzUGFzc2VuZ2VyIjp0cnVlLCJpYXQiOjE2NTI5NTcxMTh9.fwJBLg1PNB69zPlnKyE9r5brxGXFg5V2nmq8hRabn4E
+
+GET http://localhost:3030/students
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc0FkbWluIjpmYWxzZSwiaXNBZ2VudCI6ZmFsc2UsImlzUGFzc2VuZ2VyIjp0cnVlLCJpYXQiOjE2NTI5NTcxMTh9.fwJBLg1PNB69zPlnKyE9r5brxGXFg5V2nmq8hRabn4E
+
+POST http://localhost:3000/borrow-books
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc0FkbWluIjpmYWxzZSwiaXNBZ2VudCI6ZmFsc2UsImlzUGFzc2VuZ2VyIjp0cnVlLCJpYXQiOjE2NTI5NTcxMTh9.fwJBLg1PNB69zPlnKyE9r5brxGXFg5V2nmq8hRabn4E
+Content-Type: application/json
+
+{
+    "book_ids": [111,109],
+    "student_id": 1001,
+    "staff_id": 51
+}
+
+GET http://localhost:3030/students/1001
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc0FkbWluIjpmYWxzZSwiaXNBZ2VudCI6ZmFsc2UsImlzUGFzc2VuZ2VyIjp0cnVlLCJpYXQiOjE2NTI5NTcxMTh9.fwJBLg1PNB69zPlnKyE9r5brxGXFg5V2nmq8hRabn4E

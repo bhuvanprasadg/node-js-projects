@@ -1,0 +1,22 @@
+{
+  "name": "sequelize-demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "pg": "^8.7.3",
+    "pg-hstore": "^2.3.4",
+    "sequelize": "^5.22.5",
+    "test": "^0.6.0",
+    "version": "^0.1.2"
+  },
+  "devDependencies": {
+    "jest": "^27.5.1"
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [],
+  "author": "Sridhar",
+  "license": "Apache"
+}

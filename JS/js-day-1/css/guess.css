@@ -1,0 +1,44 @@
+.container{
+    margin: 70px 300px;
+    background-color: rgb(238, 238, 238);
+    text-align: center;
+    border-radius: 20px;
+    height: 240px;
+}
+p{
+    font-size: 17px;
+}
+.ip{
+    display: flex;
+    height: 30px;
+    padding: 5px;
+    justify-content: center;
+}
+.sub{
+    margin: 5px;
+    font-size: 14px;
+}
+input:hover{
+    border: 2px solid rgb(85, 85, 85);
+    border-radius: 5px;
+}
+.sub:hover{
+    background-color: rgb(180, 180, 180);
+    cursor: pointer;
+}
+.low-high{
+    color: rgb(250, 39, 39);
+    border-radius: 5px;
+    background-color: rgb(253, 222, 214);
+    width: 40%;
+    text-align: center;
+    margin: auto;
+}
+.success{
+    color: rgb(9, 110, 9);
+    border-radius: 5px;
+    background-color: rgb(214, 253, 214);
+    width: 40%;
+    text-align: center;
+    margin: auto;
+}

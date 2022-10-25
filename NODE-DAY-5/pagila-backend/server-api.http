@@ -1,0 +1,46 @@
+GET http://localhost:3000/admin/staff HTTP/1.1
+
+GET http://localhost:3000/admin/store HTTP/1.1
+
+POST http://localhost:3000/admin/store HTTP/1.1
+Content-Type: application/json
+
+{
+    "store_id":9,
+    "address_id":3,
+    "last_update":"2020-02-15T09:45:30.000Z"
+}
+
+POST http://localhost:3000/admin/customer HTTP/1.1
+Content-Type: application/json
+
+{
+    "store_id":4,
+    "address_id":7,
+    "first_name":"abc",
+    "last_name":"xyz",
+    "email":"abcd@gmail.com",
+    "activebool":true,
+    "username":"asdfgh",
+    "password":"asd@123"
+}
+
+GET http://localhost:3000/shop/film?store=2&pageNum=1&pageSize=10 HTTP/1.1
+
+GET http://localhost:3000/shop/film_details?inventoryId=18 HTTP/1.1
+
+POST http://localhost:3000/shop/rental HTTP/1.1
+Content-Type: application/json
+
+{"staff_id":2,"inventory_id":1525,"customer_id":459}
+
+POST http://localhost:3000/shop/payment HTTP/1.1
+Content-Type: application/json
+
+{"staff_id":2,"rental_id":13756,"customer_id":459,"amount":5.90,"payment_date":"Wed, 07 Apr 2020 17:28:39 GMT"}
+
+GET http://localhost:3000/shop/customer?pageNum=1&pageSize=10 HTTP/1.1
+
+GET http://localhost:3000/shop/categories
+
+GET http://localhost:3000/shop/categories/4/film

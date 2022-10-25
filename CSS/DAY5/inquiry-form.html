@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <title>Inquiry Form</title>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="CSS/inquiry-form.css">
+    </head>
+    <body>
+        <div>
+            <h1>Inquiry Form</h1>
+            <form>
+                <label for="name">Full Name</label><br>
+                <input type="text" id="name" name="fullname" placeholder="enter full name.."><br>
+
+                <label for="email">Email</label><br>
+                <input type="email" id="email" name="email" placeholder="enter email address.."> <br>
+
+                <label for="tele">Phone Number</label><br>
+                <input type="tel" id="tele" name="Phone Number" placeholder="enter phone number.."> <br>
+
+                <label for="gender">Gender</label><br>
+                <input type="radio" name="gender" id="male" value="Male">
+                <label for="male">Male</label><br>
+                <input type="radio" name="gender" id="female" value="Female">
+                <label for="female">Female</label><br>
+
+                <label for="know">How to get to know about us:</label><br>
+                <select name="know-about" id="know">
+                    <option value="Friends">Friends</option>
+                    <option value="TV">TV</option>
+                    <option value="Internet">Internet</option>
+                    <option value="Social Media">Social Media</option>
+                    <option value="Others" selected>Others</option>
+                </select><br>
+                
+                <input type="checkbox" id="subscribe" name="agreement" value="agreed">
+                <label for="subscribe"> Agree to Subscribe to News Letter</label><br>
+
+                <label for="lines">Comments:</label><br>
+                <textarea name="multi-line" id="lines" placeholder="Enter your comments here.."></textarea><br>
+
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+    </body>
+</html>

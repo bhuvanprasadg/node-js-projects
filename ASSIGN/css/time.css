@@ -1,0 +1,54 @@
+body{
+    background-color: #252525;
+    color: white;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    text-align: left;
+}
+html, body{
+    font-family: "Open Sans",sans-serif;
+    height: 100%;
+}
+body, .flex{
+    display: flex;
+    flex-direction: column;
+}
+*, ::after, ::before{
+    box-sizing: border-box;
+}
+h1{
+    color: rgb(26, 111, 238);
+}
+#clock1{
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+}
+input[type=text],select{
+    background-color: #292a2b;
+    border: 1px solid rgb(69, 184, 250);
+    border-radius: 5px;
+    height: 44px;
+    color: rgb(26, 111, 238);
+    font-size: 1.5em;
+}
+#clock2{
+    display: flex;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+}
+section{
+    height: 200px;
+}
+.mx-4{
+    height:50px;
+    border:1px solid rgb(69, 184, 250);
+    margin-top: 25px;
+}
+.hr-format{
+    margin-top: 2%;
+    margin-left: 45%;
+}

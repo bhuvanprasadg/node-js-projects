@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Time Zone Converter</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="css/time.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body onload="onChangeTime()">
+    <section></section>
+    <div class="container">
+      <h1 class="text-center mb-4 title">Dateful Time Zone Converter</h1>
+      <div class="row clock">
+        <div id="clock1" class="col clock col-lg-5 col-md-6">
+          <input type="text" id="present" class="col mx-lg-7 mt-5 px-5 ps-1" />
+          <div class="mx-4 mt-5"></div>
+          <input type="text" id="upcom" class="col mx-lg-7 mt-5 px-5 ps-1" />
+        </div>
+      </div>
+      <div class="row clock">
+        <div id="clock2" class="col clock col-lg-5 col-md-6">
+          <select type="text" id="dropdown1" class="col mx-lg-7 mt-3 px-5 ps-1">
+            <option class="local" value="local" selected>Local Time/IST</option>
+            <option class="gmt" value="gmt">GMT</option>
+            <option class="ect" value="ect">European Central Time</option>
+            <option class="eet" value="eet">Eastern European Time</option>
+            <option class="art" value="art">Egypt Standard Time</option>
+            <option class="eat" value="eat">Eastern African Time</option>
+            <option class="met" value="met">Middle East Time</option>
+            <option class="plt" value="plt">Pakistan Lahore Time</option>
+            <option class="bst" value="bst">Bangladesh Standard Time</option>
+            <option class="ctt" value="ctt">China Taiwan Time</option>
+            <option class="jst" value="jst">Japan Standard Time</option>
+          </select>
+          <div class="mx-4 mt-3"></div>
+          <select type="text" id="dropdown2" class="col mx-lg-7 mt-3 px-5 ps-1">
+            <option class="local" value="local">Local Time/IST</option>
+            <option class="gmt" value="gmt">GMT</option>
+            <option class="ect" value="ect">European Central Time</option>
+            <option class="eet" value="eet">Eastern European Time</option>
+            <option class="art" value="art">Egypt Standard Time</option>
+            <option class="eat" value="eat">Eastern African Time</option>
+            <option class="met" value="met">Middle East Time</option>
+            <option class="plt" value="plt">Pakistan Lahore Time</option>
+            <option class="bst" value="bst">Bangladesh Standard Time</option>
+            <option class="ctt" value="ctt">China Taiwan Time</option>
+            <option class="jst" value="jst" selected>Japan Standard Time</option>
+          </select>
+        </div>
+        <div class="hr-format">
+          <input type="radio" name="gender" value="12" aria-selected="true">12
+          <input type="radio" name="gender" value="24">24
+        </div>
+      </div>
+    </div>
+    <script src="js/time.js"></script>
+  </body>
+</html>

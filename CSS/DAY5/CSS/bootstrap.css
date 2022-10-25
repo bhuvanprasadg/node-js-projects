@@ -1,0 +1,38 @@
+.row{
+    margin-top: 7px;
+}
+.menuitem {
+    padding: 8px;
+}
+  /*.menu {
+    float: left;
+    width: 20%;
+  }
+  .main {
+    float: left;
+    width: 60%;
+    padding: 0 20px;
+    overflow: hidden;
+  }
+  .right {
+    background-color: lightblue;
+    float: left;
+    width: 20%;
+    padding: 10px 15px;
+    margin-top: 7px;
+  }
+  
+  @media only screen and (max-width:800px) {
+    .main {
+      width: 80%;
+      padding: 0;
+    }
+    .right {
+      width: 100%;
+    }
+  }
+  @media only screen and (max-width:500px) {
+    .menu, .main, .right {
+      width: 100%;
+    }
+  } */

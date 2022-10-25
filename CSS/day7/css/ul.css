@@ -1,0 +1,24 @@
+.row{
+    display: flex;
+    padding: 10px;
+    flex-direction: row;
+    justify-content:center;
+    background-color: rgb(231, 231, 231);
+}
+.col{
+    padding: 5px;
+    width: 100px;
+    text-align: center;
+}
+.col:nth-child(7){
+    margin-left: auto;
+    width: auto;
+}
+.col:nth-child(1){
+    text-decoration: none;
+}
+.col:nth-child(1):hover{
+    background-color: rgb(216, 216, 216);
+    color: rgb(14, 99, 211);
+    font-size: large;
+}

@@ -1,0 +1,37 @@
+body {
+  background-color: silver;
+  padding: 20px;
+}
+
+.card1 {
+  margin-top: 2rem;
+  background-color: dodgerblue;
+  padding: 2rem;
+  border-radius: 10px;
+  color: white;
+  font-family: Arial;
+  font-size: 20px;
+}
+
+.card2 {
+  margin-top: 2rem;
+  background-color: dodgerblue;
+  padding: 2rem;
+  border-radius: 10px;
+  color: white;
+  font-family: Arial;
+  font-size: 20px;
+  background-color: brown;
+}
+
+.card3 {
+  margin-top: 2rem;
+  background-color: dodgerblue;
+  padding: 2rem;
+  border-radius: 10px;
+  color: white;
+  font-family: Arial;
+  font-size: 20px;
+  background-color: #8d1337;
+}
+/*# sourceMappingURL=style.css.map */

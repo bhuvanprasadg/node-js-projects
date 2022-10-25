@@ -1,0 +1,29 @@
+GET http://localhost:3000/airports/country/Germany HTTP/1.1
+
+GET http://localhost:3000/airports/AAT HTTP/1.1
+
+POST http://localhost:3000 HTTP/1.1
+
+PUT http://localhost:3000/airports HTTP/1.1
+Content-Type: application/json
+
+{
+    "code": "AAT",
+    "lat": "47.7406",
+    "lon": "88.0845",
+    "name": "Altay Airport",
+    "city": "Altay",
+    "state": "Xinjiang",
+    "country": "China",
+    "woeid": "12511977",
+    "tz": "Asia/Urumqi",
+    "phone": "",
+    "type": "Airports",
+    "email": "",
+    "url": "",
+    "runway_length": null,
+    "elev": null,
+    "icao": "ZWAT",
+    "direct_flights": "1",
+    "carriers": "1"
+}

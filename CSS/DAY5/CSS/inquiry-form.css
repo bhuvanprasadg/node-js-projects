@@ -1,0 +1,67 @@
+*{
+    box-sizing: border-box;
+}
+div{
+    background-color: rgb(190, 219, 245);
+    border-radius: 6px;
+    padding: 1.5em;
+    margin: auto;
+    width: 50%;
+}
+
+input[type=text],input[type=email],input[type=tel],select{
+    width: 100%;
+    padding: 10px 20px;
+    margin: 10px 0;
+    border: 1px solid rgb(179, 179, 179);
+    border-radius: 6px;
+    display: inline-block;
+}
+input[type=submit]{
+    width: 100%;
+    padding: 14px 20px;
+    margin: 10px 0px 4px 0px;
+    border: none;
+    border-radius: 60px;
+    cursor: pointer;
+    background-color: rgb(20, 104, 182);
+    font-size: 1.2em;
+    color:rgb(255, 255, 255);
+    font-weight: bold;
+    text-transform: uppercase;
+}
+input[type=submit]:hover{
+    background-color: rgb(10, 69, 124);
+}
+label{
+    font-size: 1.1em;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: -0.2em;
+    font-weight: 500;
+}
+h1{
+    margin-top: -0.5em;
+    text-align: center;
+}
+input[type=checkbox]{
+    padding: 14px 20px;
+    margin: 15px 0;
+}
+input[type=radio]{
+    margin: 9px 13px 10px 13px;
+    padding: 9px;
+}
+textarea{
+    border-radius: 5px;
+    padding: 13px 20px;
+    margin: 0.3em;
+    width: 100%;
+}
+@media screen and (max-width:400px) {
+    div{
+        width:100%;
+        margin: auto;
+        display: block;
+        float: none;
+    }
+}

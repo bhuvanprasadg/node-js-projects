@@ -1,0 +1,24 @@
+/* make modifications here
+ change primary secondary colors
+ change $grid-breakpoints and $container-max-widths: */
+ $primary: rgb(95, 50, 8);
+ $secondary: rgb(21, 87, 209);
+/* Successfully changed the primary & secondary colors..*/
+$grid-breakpoints: (
+    xs: 0,
+    sm: 676px,
+    md: 868px,
+    lg: 1092px,
+    xl: 1300px,
+    xxl: 1500px
+);
+/*Successfully changed/modified the grid-breakpoints*/
+$container-max-widths: (
+    sm: 640px,
+    md: 820px,
+    lg: 1060px,
+    xl: 1240px,
+    xxl: 1420px
+) !default;
+/*Successfully changed/modified the container-max-widths*/
+@import '../node_modules/bootstrap/scss/bootstrap';

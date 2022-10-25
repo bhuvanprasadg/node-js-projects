@@ -1,0 +1,23 @@
+{
+  "name": "express",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.0",
+    "date-and-time": "^2.3.0",
+    "express": "^4.17.3",
+    "fs": "^0.0.1-security",
+    "jest": "^27.5.1",
+    "path": "^0.12.7",
+    "pg": "^8.7.3",
+    "sequelize": "^6.18.0",
+    "test": "^0.6.0"
+  }
+}

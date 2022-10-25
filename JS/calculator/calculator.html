@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator DropDown</title>
+    <script src="js/calculator.js"></script>
+    <link rel="stylesheet" href="css/calculator.css">
+</head>
+<body>
+    <div class="main">
+        <h1>CALCULATOR</h1>
+        <div class="calculate">
+            <p><input type="text" class="input1" placeholder="enter first input"></p>
+            <select class="dropdown" onchange="dropdownFn()">
+                <option value="" class="" selected>Select</option>
+                <option value="add" class="add">Add</option>
+                <option value="subtract" class="subtract">Subtract</option>
+                <option value="multiply" class="multiply">Multiply</option>
+                <option value="divide" class="divide">Divide</option>
+            </select>
+            <p><input type="text" class="input2" placeholder="enter second input"></p>
+        </div>
+        <input type="submit" class="submit" value="calculate">
+        <input type="text" class="data" placeholder="your result will appear here">
+    </div>
+</body>
+</html>

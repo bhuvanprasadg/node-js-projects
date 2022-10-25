@@ -1,0 +1,28 @@
+body{
+    background-color: rgb(192, 192, 192);
+    padding:20px;
+  }
+  
+  @mixin common-styling{
+    margin-top: 2rem;
+    background-color: dodgerblue;
+    padding: 2rem;
+    border-radius: 10px;
+    color: white;
+    font-family: Arial;
+    font-size: 20px;
+  }
+  
+  .card1 {
+    @include common-styling;
+  }
+  
+  .card2 {
+    @include common-styling;
+    background-color: brown;
+  }
+  .card3{
+    @include common-styling();
+    background-color:rgb(141, 19, 55);
+  }
+  

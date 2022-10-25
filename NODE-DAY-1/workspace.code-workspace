@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "..\\NODE-DAY-2"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "ASSIGN"
+	}
+}

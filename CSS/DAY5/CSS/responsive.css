@@ -1,0 +1,156 @@
+* {
+    box-sizing: border-box;
+}
+
+body,
+html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.hero-image {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://www.w3schools.com/howto/photographer.jpg");
+    height: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.hero-text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+.hero-text button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 10px 25px;
+    color: black;
+    background-color: #ddd;
+    text-align: center;
+    cursor: pointer;
+}
+
+.hero-text button:hover {
+    background-color: #555;
+    color: white;
+}
+
+article h1 {
+    font-size: 2rem;
+}
+
+header ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+header li {
+    float: left;
+}
+
+header li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+header li a:hover {
+    background-color: #111;
+}
+
+/* Create two columns/boxes that floats next to each other */
+.sidebar-nav {
+    float: left;
+    width: 30%;
+    height: 300px;
+    /* only for demonstration, should be removed */
+    background: #ccc;
+    padding: 20px;
+}
+
+/* Style the list inside the menu */
+.sidebar-nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+article {
+    float: left;
+    padding: 20px;
+    width: 70%;
+    background-color: #f1f1f1;
+    height: 300px;
+}
+
+/* Clear floats after the columns */
+section::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Style the footer */
+footer {
+    background-color: #777;
+    padding: 10px;
+    text-align: center;
+    color: white;
+}
+@media screen and (max-width:480px) {
+    header li{
+        float: none;
+        width: 100%;
+    }
+    .hero-image{
+        background-image: none;
+        background-color: rgb(105, 105, 105);
+    }
+    .sidebar-nav{
+        float: none;
+        width: 100%;
+        padding: 0;
+    }
+    .sidebar-nav ul{
+        padding: 2em;
+        font-size: 1.5rem;
+    }
+    article{
+        float: none;
+        width: 100%;
+        padding: 0;
+    }
+    h1:nth-child(1), h1:nth-child(2){
+        font-size: 1rem;
+    }
+    article p{
+        font-size: 1.5rem;
+    }
+    footer{
+        margin-top: 5em;
+        height: 3em;
+    }
+}
+@media print {
+    header, .hero-image, .sidebar-nav, footer{
+        display: none;
+    }
+    article{
+        float: none;
+        width: 100%;
+        padding: 15px 0;
+        margin: auto;
+    }
+}

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regex Validation</title>
+    <link rel="stylesheet" href="regex.css">
+    <script src="regex.js"></script>
+</head>
+<body>
+    <h1>Regex Validation</h1>
+    <div>
+        <p class="text1">Enter your regex here:</p>
+        <input type="text" class="regex">
+
+        <p class="text2">Enter your Success test cases:</p>
+        <span><input type="text" class="trueString1"><p class="message1"></p></span>
+        <span><input type="text" class="trueString2"><p class="message2"></p></span>
+        <span><input type="text" class="trueString3"><p class="message3"></p></span>
+
+        <p class="text3">Enter your Failure test cases:</p>
+        <span><input type="text" class="falseString1"><p class="message4"></p></span>
+        <span><input type="text" class="falseString2"><p class="message5"></p></span>
+        <span><input type="text" class="falseString3"><p class="message6"></p></span>
+
+        <button onclick="regexValidation()">validate</button>
+    </div>
+</body>
+</html>

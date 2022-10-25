@@ -1,0 +1,8 @@
+.back{
+    background-image: url("../resources/head.jpg");
+    height: 200px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
